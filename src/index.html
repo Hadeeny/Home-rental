@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="/dist/output.css" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home rental service</title>
+</head>
+<body>
+    <!-- Desktop Header -->
+    <header class="w-full flex relative flex-col pt-2 bg-black/20 bg-blend-darken 
+    bg-[url('/src/assets/navcover.png')] h-[42rem] object-cover bg-cover">
+        <nav class="w-10/12 border-b border-white mx-auto flex justify-between items-center py-4">
+        <div>
+            <img src='./assets/logo 1.png'/>
+        </div>
+        <ul class="hidden md:flex text-white space-x-8">
+            <li><a href="">Home</a></li>
+            <li><a href="">Landlord</a></li>
+            <li><a href="">Tenant</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+        <!-- harmburger -->
+        <div class="flex flex-col gap-y-[7px] cursor-pointer md:hidden">
+            <div class='h-[2px] w-8 bg-white'></div>    
+            <div class='h-[2px] w-8 bg-white'></div>    
+            <div class='h-[2px] w-8 bg-white'></div>    
+        </div>
+        </nav>
+        <!-- Hero -->
+        <section class="w-10/12 absolute left-0 right-0 top-1/3 mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div class="w-full md:w-1/2 text-white text-[3rem] leading-[3.5rem] font-bold">
+            <h1>The Most Affordable Place To Stay In The
+                San Fransisco Bay Area
+            </h1>
+        </div>
+        <div class="w-full md:w-1/2">
+        <img/>
+        </div>
+        </section>
+    </header>
+    <section class="w-10/12 my-10 mx-auto flex flex-col">
+        <div class="relative">
+            <h1 class="text-3xl font-bold">Minimum Living Cost Takes Care Of Everything</h1>
+            <div class="w-1/4 h-[2px] absolute bg-orange-500"></div>
+        </div>
+        <div class="w-full flex my-4 justify-between items-center">
+            <div class="w-2/5">
+                <div>
+                    <img src='./assets/unsplash.png'/>
+                </div>
+            </div>
+            <div id='smallcard' class="w-3/5 grid grid-rows-3 grid-cols-3 gap-4">
+                <!-- small cards -->
+                <!-- <div class="space-y-4">
+                    <div class="w-[5rem] h-[5rem] bg-orange-500 shadow-lg"></div>
+                    <h3 class="text-lg font-bold">Pay as little <br> as possible</h3>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-[5rem] h-[5rem] bg-orange-500 shadow-lg"></div>
+                    <h3 class="text-lg font-bold">Enjoy wisdom <br> of community</h3>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-[5rem] h-[5rem] bg-orange-500 shadow-lg"></div>
+                    <h3 class="text-lg w-full font-bold">Let somebody else take <br>Take care of landlords</h3>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-[5rem] h-[5rem] bg-orange-500 shadow-lg"></div>
+                    <h3 class="text-lg font-bold">Enjoy peaceful <br>environment</h3>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-[5rem] h-[5rem] bg-orange-500 shadow-lg"></div>
+                    <h3 class="text-xl font-bold">Stay safe <br> save money</h3>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-[5rem] h-[5rem] bg-orange-500 shadow-lg"></div>
+                    <h3 class="text-xl font-bold">Pay for what <br> you use</h3>
+                </div>
+                 -->
+            </div>
+        </div>
+    </section>
+    <section  class="w-10/12 my-10 mx-auto flex flex-col">
+        <div class="flex justify-between items-center w-full">
+            <div class="relative">
+                <h1 class="text-3xl font-bold">List Of Properties</h1>
+                <div class="w-1/4 h-[2px] absolute bg-orange-500"></div>
+            </div> 
+            <a class="bg-orange-500 px-4 py-3 text-white" href="">View all properties</a>
+        </div>
+        <div id='properties' class='w-full grid grid-rows-3 grid-cols-3 gap-4' >
+
+        </div>
+    </section>
+    <script src='./script.js'></script>
+</body>
+</html>
