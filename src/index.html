@@ -82,17 +82,112 @@
             </div>
         </div>
     </section>
-    <section  class="w-10/12 my-10 mx-auto flex flex-col">
-        <div class="flex justify-between items-center w-full">
-            <div class="relative">
-                <h1 class="text-3xl font-bold">List Of Properties</h1>
-                <div class="w-1/4 h-[2px] absolute bg-orange-500"></div>
-            </div> 
-            <a class="bg-orange-500 px-4 py-3 text-white" href="">View all properties</a>
-        </div>
-        <div id='properties' class='w-full grid grid-rows-3 grid-cols-3 gap-4' >
+    <div class="w-full bg-gray-300">
+        <section  class="w-10/12 pt-[4rem] mx-auto flex flex-col">
+            <div class="flex justify-between my-12 items-center w-full">
+                <div class="relative">
+                    <h1 class="text-3xl font-bold">List Of Properties</h1>
+                    <div class="w-1/4 h-[2px] absolute bg-orange-500"></div>
+                </div> 
+                <a class="bg-orange-500 px-4 py-3 text-white" href="">View all properties</a>
+            </div>
+            <div id='properties' class='w-full grid grid-rows-2 grid-cols-3 gap-x-4 gap-y-8' >
+    
+            </div>
+            <ul class="border my-10 w-[23rem] divide-x divide-gray-500 mx-auto border-gray-500 flex justify-between items-center">
+                <li class="w-full py-4 text-center">First</li>
+                <li class="w-full py-4 text-center">1</li>
+                <li class="w-full py-4 text-center">2</li>
+                <li class="w-full py-4 text-center">1</li>
+                <li class="w-full py-4 text-center">Next</li>
+            </ul>
+        </section>
+    </div>
 
+    <!-- Search room -->
+    <section class="w-10/12 my-10 mx-auto flex flex-col">
+        <div class="w-full flex space-x-10 flex-col-reverse md:flex-row items-center">
+            <!-- Image gallery -->
+            <div class="w-full flex gap-y-4 flex-col md:w-1/2">
+            <div class="flex space-x-4 items-end justify-between">
+                <div class="w-[47%] bg-black/30 rounded-xl pt-4 bg-blend-darken bg-black h-[20rem] bg-cover bg-[url('/src/assets/show1.png')]">
+                    <h3 class="text-center text-white font-semibold text-2xl">Flexible Leases</h3>
+                </div>
+                <div class="w-[53%] bg-black/30 rounded-xl pt-4 bg-blend-darken bg-black h-[16rem] bg-cover bg-[url('/src/assets/show2.png')]">
+                    <h3 class="text-center text-white font-semibold text-2xl">7-Day Happiness<br>Guaranteed</h3>
+                </div>
+            </div>
+            <div class="flex space-x-4 items-start justify-between">
+                <div class="w-[43%] bg-black/30 rounded-xl pt-4 bg-blend-darken bg-black h-[16rem] bg-cover bg-[url('/src/assets/show3.png')]">
+                    <h3 class="text-center text-white font-semibold text-2xl">Monthly House<br>Cleaning</h3>
+                </div>
+                <div class="w-[57%] bg-black/30 rounded-xl pt-4 bg-blend-darken bg-black h-[20rem] bg-cover bg-[url('/src/assets/show4.png')]">
+                    <h3 class="text-center text-white font-semibold text-2xl">Choose Your<br>Own Roommate</h3>
+                </div>
+            </div>
+            
+            </div>
+            <div class="w-full flex gap-y-4 flex-col items-start md:w-1/2">
+            <h2 class="font-bold text-3xl">Flexibility and options<br> to suit your lifestyle</h2>
+            <p>You need it? We got it. We make finding your next<br> home easy, comfortable, and simple. From our<br> 
+                happiness guarantee to our selective roommate<br> finder option. 
+                We provide you the flexibility that you <br>most desire.</p>
+                <button class="bg-orange-500 text-white text-md px-8 py-3 rounded-xl">Search Rooms</button>
+            </div>
         </div>
+    </section >
+    <section class="w-10/12 my-10 mx-auto flex flex-col">
+    <h3 class="text-center text-2xl">Your property with us and be Confident that Your Room will be Filled Out!</h3>
+    <!-- Form -->
+    <div class="p-4 shadow-xl my-8">
+        <h2 class="text-center text-2xl font-bold text-orange-500">Add A New Property</h2>
+        <form class="w-11/12 mx-auto mt-8 border-black">
+            <div class="grid gap-5 grid-cols-3">
+                <div class="flex flex-col gap-y-2">
+                    <label>Name</label>
+                    <input class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Name" type="text"/>
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <label>Address</label>
+                    <input class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Address" type="text"/>
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <label>Unit Number</label>
+                    <input class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Unit" type="text"/>
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <label>City</label>
+                    <input class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter City" type="text"/>
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <label>State</label>
+                    <input class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter State" type="text"/>
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <label>Room Type</label>
+                    <input class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Room Type" type="text"/>
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <label>Price</label>
+                    <input class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Price" type="text"/>
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <label>Room Type</label>
+                    <input class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Room Type" type="text"/>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-2 my-8">
+                <label>Description</label>
+                <textarea class="border outline-none border-gray-500 p-4 bg-gray-100 rounded-md" placeholder="Description" name="description" id="description" cols="30" rows="10"></textarea>
+            </div>
+            <div class="flex flex-col gap-y-2 my-8">
+                <label>Upload Images</label>
+                <input type="file"/>
+            </div>
+            
+            <button class="w-1/2 bg-orange-500 py-2 text-white text-xl  rounded-lg">Add New Property</button>
+        </form>
+    </div>
     </section>
     <script src='./script.js'></script>
 </body>
