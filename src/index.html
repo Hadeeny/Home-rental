@@ -182,10 +182,17 @@
             </div>
             <div class="flex flex-col gap-y-2 my-8">
                 <label>Upload Images</label>
-                <input type="file"/>
+                <div id='droparea' class="border-2 h-[15rem] flex items-center justify-center border-dashed w-full border-gray-500">
+                    <div>
+                        <p class="">Drap or upload image</p>
+                        <input type="file"/>
+                    </div>
+                </div>
             </div>
             
-            <button class="w-1/2 bg-orange-500 py-2 text-white text-xl  rounded-lg">Add New Property</button>
+            <div class="w-full py-[2rem] flex justify-center">
+                <button class="w-1/2 bg-orange-500 py-2 text-white text-xl  rounded-lg">Add New Property</button>
+            </div>
         </form>
     </div>
     </section>

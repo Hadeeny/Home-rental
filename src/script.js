@@ -54,3 +54,42 @@ props.innerHTML = properties
     `
   )
   .join("");
+
+// Drag and drop area
+const droparea = document.getElementById("droparea");
+
+// When item is dragged into input area
+droparea.addEventListener("dragover", (e) => {
+  e.preventDefault();
+  droparea.classList.add("border-orange-500");
+  // console.log("dragging");
+});
+
+// when item is dragged out of input area
+droparea.addEventListener("dragleave", (e) => {
+  e.preventDefault();
+  droparea.classList.remove("border-orange-500");
+  // console.log("dragging");
+});
+
+// when item is dropped inside input area
+droparea.addEventListener("drop", (e) => {
+  e.preventDefault();
+  const image = e.dataTransfer.files[0];
+  const type = image.type;
+
+  if (
+    type == "image/jpg" ||
+    type == "image/png" ||
+    type == "image/jpeg" ||
+    type == "image/JPEG"
+  ) {
+    droparea.setAttribute("class", "border-green-500");
+    droparea.innerText = "Added" + image.name;
+    return;
+  } else {
+    droparea.setAttribute("class", "border-red-900");
+    droparea.innerText = "Invalid file format";
+  }
+  // console.log("dragging");
+});
