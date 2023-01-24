@@ -1,15 +1,61 @@
 const smallcard = document.getElementById("smallcard");
 const props = document.getElementById("properties");
-const benefits = [1, 2, 3, 4, 5, 6];
-const properties = [1, 2, 3, 4, 5, 6];
+const benefits = [
+  {
+    text: "Pay As Little As Possible",
+    icon: "./assets/icon1.svg",
+  },
+  {
+    text: "Enjoy wisdom of community",
+    icon: "./assets/icon2.svg",
+  },
+  {
+    text: "Let somebody else take Take care of landlords",
+    icon: "./assets/icon3.svg",
+  },
+  {
+    text: "Enjoy Peaceful Environment",
+    icon: "./assets/icon4.svg",
+  },
+  {
+    text: "Stay Safe Save Money",
+    icon: "./assets/icon5.svg",
+  },
+  {
+    text: "Pay For What You Use",
+    icon: "./assets/icon6.svg",
+  },
+];
+const properties = [
+  {
+    home: "./assets/home1.png",
+  },
+  {
+    home: "./assets/home2.png",
+  },
+  {
+    home: "./assets/home3.png",
+  },
+  {
+    home: "./assets/home4.png",
+  },
+  {
+    home: "./assets/home5.png",
+  },
+  {
+    home: "./assets/home6.png",
+  },
+];
 
 smallcard.innerHTML = benefits
   .map(
     (item, id) =>
       `
     <div class="space-y-4">
-                    <div class="w-[5rem] h-[5rem] bg-orange-500 shadow-lg"></div>
-                    <h3 class="text-lg font-bold">Pay as little <br> as possible</h3>
+                    <div class="w-[5rem] h-[5rem] flex items-center justify-center shadow-lg">
+                    <img src='${item.icon}'/>
+                    </div>
+                    <h3 class="text-lg max-w-sm font-bold">${item.text}</h3>
                 </div>
     `
   )
@@ -34,7 +80,7 @@ props.innerHTML = properties
       `
     <div class="flex flex-col bg-white border border-gray-700 rounded-[1.5rem] shadow-xl">
     <div class="w-full h-full">
-    <img src='${path}'/>
+    <img src='${item.home}'/>
     </div>
         <div class='px-6'>
         <h2 class='text-xl font-bold'>
@@ -57,18 +103,19 @@ props.innerHTML = properties
 
 // Drag and drop area
 const droparea = document.getElementById("droparea");
+const file = document.getElementById("file");
 
 // When item is dragged into input area
 droparea.addEventListener("dragover", (e) => {
   e.preventDefault();
-  droparea.classList.add("border-orange-500");
+  droparea.classList.add("border-green-500");
   // console.log("dragging");
 });
 
 // when item is dragged out of input area
 droparea.addEventListener("dragleave", (e) => {
   e.preventDefault();
-  droparea.classList.remove("border-orange-500");
+  droparea.classList.remove("border-green-500");
   // console.log("dragging");
 });
 
@@ -84,11 +131,12 @@ droparea.addEventListener("drop", (e) => {
     type == "image/jpeg" ||
     type == "image/JPEG"
   ) {
-    droparea.setAttribute("class", "border-green-500");
-    droparea.innerText = "Added" + image.name;
+    // droparea.setAttribute("class", "border-green-500");
+    droparea.classList.remove("border-green-500");
+    file.innerText = "Added: " + image.name;
     return;
   } else {
-    droparea.setAttribute("class", "border-red-900");
+    // droparea.setAttribute("class", "border-red-900");
     droparea.innerText = "Invalid file format";
   }
   // console.log("dragging");

@@ -17,7 +17,7 @@
             <img src='./assets/logo 1.png'/>
         </div>
         <ul class="hidden md:flex text-white space-x-8">
-            <li><a href="">Home</a></li>
+            <li class="hover:border-b hover:border-black"><a href="">Home</a></li>
             <li><a href="">Landlord</a></li>
             <li><a href="">Tenant</a></li>
             <li><a href="">Contact us</a></li>
@@ -53,36 +53,10 @@
                 </div>
             </div>
             <div id='smallcard' class="w-3/5 grid grid-rows-3 grid-cols-3 gap-4">
-                <!-- small cards -->
-                <!-- <div class="space-y-4">
-                    <div class="w-[5rem] h-[5rem] bg-orange-500 shadow-lg"></div>
-                    <h3 class="text-lg font-bold">Pay as little <br> as possible</h3>
-                </div>
-                <div class="space-y-4">
-                    <div class="w-[5rem] h-[5rem] bg-orange-500 shadow-lg"></div>
-                    <h3 class="text-lg font-bold">Enjoy wisdom <br> of community</h3>
-                </div>
-                <div class="space-y-4">
-                    <div class="w-[5rem] h-[5rem] bg-orange-500 shadow-lg"></div>
-                    <h3 class="text-lg w-full font-bold">Let somebody else take <br>Take care of landlords</h3>
-                </div>
-                <div class="space-y-4">
-                    <div class="w-[5rem] h-[5rem] bg-orange-500 shadow-lg"></div>
-                    <h3 class="text-lg font-bold">Enjoy peaceful <br>environment</h3>
-                </div>
-                <div class="space-y-4">
-                    <div class="w-[5rem] h-[5rem] bg-orange-500 shadow-lg"></div>
-                    <h3 class="text-xl font-bold">Stay safe <br> save money</h3>
-                </div>
-                <div class="space-y-4">
-                    <div class="w-[5rem] h-[5rem] bg-orange-500 shadow-lg"></div>
-                    <h3 class="text-xl font-bold">Pay for what <br> you use</h3>
-                </div>
-                 -->
             </div>
         </div>
     </section>
-    <div class="w-full bg-gray-300">
+    <div class="w-full bg-[#E5E5E5]">
         <section  class="w-10/12 pt-[4rem] mx-auto flex flex-col">
             <div class="flex justify-between my-12 items-center w-full">
                 <div class="relative">
@@ -144,48 +118,50 @@
         <form class="w-11/12 mx-auto mt-8 border-black">
             <div class="grid gap-5 grid-cols-3">
                 <div class="flex flex-col gap-y-2">
-                    <label>Name</label>
-                    <input class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Name" type="text"/>
+                    <label class="font-bold">Name</label>
+                    <input required class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Name" type="text"/>
                 </div>
                 <div class="flex flex-col gap-y-2">
-                    <label>Address</label>
-                    <input class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Address" type="text"/>
+                    <label class="font-bold">Address</label>
+                    <input required class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Address" type="text"/>
                 </div>
                 <div class="flex flex-col gap-y-2">
-                    <label>Unit Number</label>
-                    <input class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Unit" type="text"/>
+                    <label class="font-bold">Unit Number</label>
+                    <input required class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Unit" type="text"/>
                 </div>
                 <div class="flex flex-col gap-y-2">
-                    <label>City</label>
-                    <input class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter City" type="text"/>
+                    <label class="font-bold">City</label>
+                    <input required class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter City" type="text"/>
                 </div>
                 <div class="flex flex-col gap-y-2">
-                    <label>State</label>
-                    <input class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter State" type="text"/>
+                    <label class="font-bold">State</label>
+                    <input required class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter State" type="text"/>
                 </div>
                 <div class="flex flex-col gap-y-2">
-                    <label>Room Type</label>
-                    <input class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Room Type" type="text"/>
+                    <label class="font-bold">Room Type</label>
+                    <input required class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Room Type" type="text"/>
                 </div>
                 <div class="flex flex-col gap-y-2">
-                    <label>Price</label>
-                    <input class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Price" type="text"/>
+                    <label class="font-bold">Price</label>
+                    <input required class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Price" type="text"/>
                 </div>
                 <div class="flex flex-col gap-y-2">
-                    <label>Room Type</label>
-                    <input class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Room Type" type="text"/>
+                    <label class="font-bold">Room Type</label>
+                    <input required class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Room Type" type="text"/>
                 </div>
             </div>
             <div class="flex flex-col gap-y-2 my-8">
-                <label>Description</label>
+                <label class="font-bold">Description</label>
                 <textarea class="border outline-none border-gray-500 p-4 bg-gray-100 rounded-md" placeholder="Description" name="description" id="description" cols="30" rows="10"></textarea>
             </div>
             <div class="flex flex-col gap-y-2 my-8">
-                <label>Upload Images</label>
-                <div id='droparea' class="border-2 h-[15rem] flex items-center justify-center border-dashed w-full border-gray-500">
-                    <div>
-                        <p class="">Drap or upload image</p>
-                        <input type="file"/>
+                <label class="font-bold">Upload Images</label>
+                <div id='droparea' class="border-2 h-[10rem] rounded-md flex items-center justify-center border-dashed w-full border-orange-500">
+                    <div class="text-center">
+                        <h4 class="font-bold">Drop your image or <span class="text-orange-500 cursor-pointer">browse</span></h4>
+                        <h4  id='file'></h4>
+                        <p class="text-gray-500">Supported JPG, JPG, PNG </p>
+                        <!-- <input required type="file"/> -->
                     </div>
                 </div>
             </div>
@@ -195,6 +171,30 @@
             </div>
         </form>
     </div>
+    </section>
+    <section class="w-full flex bg-orange-100 justify-between">
+        <div class="w-full md:w-1/2 p-[4rem] flex flex-col">
+          <p class="text-lg font-semibold">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+            Etiam interdum nisl et nunc facilisis, a commodo eros mollis. Nunc vel<br> 
+            pellentesque est. Curabitur at odio sit amet libero vulputate <br>
+            efficitur ac nec justo. Nulla vitae mauris quam. Nulla quam <br>
+            massa, faucibus id pretium ac, mattis eu velit. Donec sed risus<br> 
+            a lacus fringilla finibus.
+          </p>  
+          <div class="flex items-center my-[2rem] space-x-4">
+              <div>
+                  <img src="./assets/user.png"/>
+              </div>
+              <div class="space-y-2">
+                <h4 class="text-orange-500">Harry Wilson</h4>
+                <p>property owner</p>
+              </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2">
+            <!-- <input type=''/> -->
+        </div>
     </section>
     <script src='./script.js'></script>
 </body>
