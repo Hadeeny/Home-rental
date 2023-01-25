@@ -22,16 +22,16 @@
             <li><a href="">Tenant</a></li>
             <li><a href="">Contact us</a></li>
         </ul>
-        <!-- harmburger -->
-        <div class="flex flex-col gap-y-[7px] cursor-pointer md:hidden">
-            <div class='h-[2px] w-8 bg-white'></div>    
-            <div class='h-[2px] w-8 bg-white'></div>    
-            <div class='h-[2px] w-8 bg-white'></div>    
+        <!-- hamburger -->
+        <div id="hamburger" class="flex z-[30] flex-col gap-y-[7px] cursor-pointer md:hidden">
+            <div id="topp" class='h-[2px] w-8 duration-500 bg-white'></div>    
+            <div id="middle" class='h-[2px] w-8 bg-white'></div>    
+            <div id="bottom" class='h-[2px] w-8 duration-500 bg-white'></div>    
         </div>
         </nav>
         <!-- Hero -->
         <section class="w-10/12 absolute left-0 right-0 top-1/3 mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div class="w-full md:w-1/2 text-white text-[3rem] leading-[3.5rem] font-bold">
+        <div class="w-full md:w-1/2 text-white text-3xl md:text-[3rem] leading-[3.5rem] font-bold">
             <h1>The Most Affordable Place To Stay In The
                 San Fransisco Bay Area
             </h1>
@@ -40,7 +40,18 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555060494!2d-122.507640411202!3d37.75781499688801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1674644408577!5m2!1sen!2sng" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         </section>
+        
     </header>
+    <!-- mobile menu -->
+    <section id="togglemenu" class="w-full duration-500 translate-x-[100%] bg-white/70 backdrop-blur-md z-[20] fixed top-0 left-0 right-0 h-screen md:hidden">
+
+        <ul class="absolute w-1/2 space-y-8 text-center flex flex-col justify-center inset-y-0 my-auto inset-x-0 mx-auto">
+            <li><a class="text-3xl" href="">Home</a></li>
+            <li><a class="text-3xl" href="">Landlord</a></li>
+            <li><a class="text-3xl" href="">Tenant</a></li>
+            <li><a class="text-3xl" href="">Contact us</a></li>
+        </ul>
+    </section>
     <section class="w-10/12 my-10 mx-auto flex flex-col">
         <div class="relative">
             <h1 class="text-3xl font-bold">Minimum Living Cost Takes Care Of Everything</h1>
@@ -174,7 +185,7 @@
         </form>
     </div>
     </section>
-    <section class="w-full flex bg-orange-100 justify-between">
+    <section class="w-full flex flex-col md:flex-row bg-orange-100 justify-between">
         <div class="w-full md:w-1/2 p-[4rem] flex flex-col">
           <p class="text-lg font-semibold">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
@@ -195,25 +206,16 @@
           </div>
         </div>
         <div class="w-full md:w-1/2 h-full">
-            <video controls class="h-full">
+            <video controls height="">
 
                 <source src="./assets/testvideo.mp4"
                         type="video/mp4">
-            
-                <!-- <source src="https://youtu.be/4sh1gS5Gr-o"
-                        type="video/mp4"> -->
-            
-                <!-- Download the
-                <a href="https://youtu.be/4sh1gS5Gr-o">WEBM</a>
-                or -->
-                <!-- <a href="https://youtu.be/4sh1gS5Gr-o">MP4</a>
-                video. -->
             </video>
             <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4sh1gS5Gr-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
         </div>
     </section>
     <Footer class="w-10/12 my-10 mx-auto flex flex-col">
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between flex-col md:flex-row items-center">
             <div class="w-full md:w-1/2">
                 <h2 class="text-[3rem] font-bold">Logo</h2>
             </div>
@@ -222,7 +224,7 @@
                     <img src="./assets/location.svg" />
                     <p>345 Faulconer Drive, Suite 4. Charlottesville, CA 12345</p>
                 </div>
-                <div class="flex justify-between">
+                <div class="flex flex-col md:flex-row justify-between">
                     <div class="flex space-x-4">
                         <img src="./assets/phone.svg"/>
                         <p>(123)345-450</p>
@@ -232,8 +234,8 @@
                         <p>(123)345-450</p>
                     </div>
                 </div>
-                <div class="flex space-x-5">
-                    <p>Social Media</p>
+                <div class="flex flex-col space-y-4 md:flex-row">
+                    <p class="mr-8">Social Media</p>
                     <div class="flex space-x-4">
                         <img src="./assets/fb.svg"/>
                         <img src="./assets/fb.svg"/>
@@ -245,8 +247,8 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-between my-8">
-            <ul class="flex space-x-4">
+        <div class="flex flex-col md:flex-row justify-between my-8">
+            <ul class="flex flex-col md:flex-row justify-between w-1/2">
                 <li><a class="uppercase">About us</a></li>
                 <li><a class="uppercase">Contact us</a></li>
                 <li><a class="uppercase">Help</a></li>

@@ -141,3 +141,20 @@ droparea.addEventListener("drop", (e) => {
   }
   // console.log("dragging");
 });
+
+const menubtn = document.getElementById("hamburger");
+const togglemenu = document.getElementById("togglemenu");
+const middle = document.getElementById("middle");
+const topp = document.getElementById("topp");
+const btm = document.getElementById("bottom");
+
+const hideMiddle = "hidden";
+const hideMenu = "translate-x-[100%]";
+const rotateTop = "rotate-45";
+// const rotateBtm = `-rotate-45 translate-y-[4rem]`;
+menubtn.addEventListener("click", () => {
+  middle.classList.toggle(hideMiddle);
+  togglemenu.classList.toggle(hideMenu);
+  topp.classList.toggle(rotateTop);
+  btm.classList.toggle("rotateBtm");
+});
