@@ -12,21 +12,33 @@
     <!-- Desktop Header -->
     <header class="w-full flex relative flex-col pt-2 bg-black/20 bg-blend-darken 
     bg-[url('/src/assets/navcover.png')] h-[42rem] object-cover bg-cover">
-        <nav class="w-10/12 border-b border-white mx-auto flex justify-between items-center py-4">
+        <nav class="w-10/12 border-b border-gray-400 mx-auto flex justify-between items-center py-4">
         <div>
             <img src='./assets/logo 1.png'/>
         </div>
         <ul class="hidden md:flex text-white space-x-8">
-            <li class="hover:border-b hover:border-black"><a href="">Home</a></li>
-            <li><a href="">Landlord</a></li>
-            <li><a href="">Tenant</a></li>
-            <li><a href="">Contact us</a></li>
+            <li class="relative group hover:border-white">
+                <a href="">Home</a>
+                <div class="bg-white duration-500 group-hover:w-full absolute top-[3.3rem] h-0.5 w-0"></div>
+            </li>
+            <li class="relative group hover:border-white">
+                <a href="">Landlord</a>
+                <div class="bg-white duration-500 group-hover:w-full absolute top-[3.3rem] h-0.5 w-0"></div>
+            </li>
+            <li class="relative group hover:border-white">
+                <a href="">Tenant</a>
+                <div class="bg-white duration-500 group-hover:w-full absolute top-[3.3rem] h-0.5 w-0"></div>
+            </li>
+            <li class="relative group hover:border-white">
+                <a href="">Contact us</a>
+                <div class="bg-white duration-500 group-hover:w-full absolute top-[3.3rem] h-0.5 w-0"></div>
+            </li>
         </ul>
         <!-- hamburger -->
-        <div id="hamburger" class="flex z-[30] flex-col gap-y-[7px] cursor-pointer md:hidden">
+        <div id="hamburger" class="h-[2rem] z-[30] cursor-pointer md:hidden">
             <div id="topp" class='h-[2px] w-8 duration-500 bg-white'></div>    
-            <div id="middle" class='h-[2px] w-8 bg-white'></div>    
-            <div id="bottom" class='h-[2px] w-8 duration-500 bg-white'></div>    
+            <div id="middle" class='h-[2px] translate-y-2 w-8 bg-white'></div>    
+            <div id="bottom" class='h-[2px] translate-y-4 w-8 duration-500 bg-white'></div>    
         </div>
         </nav>
         <!-- Hero -->
@@ -207,9 +219,7 @@
         </div>
         <div class="w-full md:w-1/2 h-full">
             <video controls height="">
-
-                <source src="./assets/testvideo.mp4"
-                        type="video/mp4">
+                <source src="./assets/testvideo.mp4" type="video/mp4">
             </video>
             <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4sh1gS5Gr-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
         </div>

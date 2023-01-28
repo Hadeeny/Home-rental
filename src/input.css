@@ -4,5 +4,9 @@
 
 .rotateBtm {
   transform: rotate(-45deg);
-  transform: translateY(10px);
+  /* top: 2.4rem; */
+}
+.rotateTop {
+  transform: rotate(45deg);
+  /* top: 2.4rem; */
 }

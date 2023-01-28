@@ -74,6 +74,10 @@ smallcard.innerHTML = benefits
 //   )
 //   .join("");
 const path = "./assets/property1.png";
+
+const house = "./assets/house.svg";
+const bath = "./assets/bath.svg";
+const hash = "./assets/hash.svg";
 props.innerHTML = properties
   .map(
     (item, id) =>
@@ -92,9 +96,24 @@ props.innerHTML = properties
        </div>
         </div>
        <ul class='border-t border-black flex justify-between px-2 py-0'>
-       <li class='w-full text-center py-2'>a</li>
-       <li class='w-full border-x text-center py-2 border-black'>b</li>
-       <li class='w-full text-center py-2'>c</li>
+       <li class='w-full flex space-x-2 justify-center items-center py-2'>
+        <div>
+        <img src='${house}'/>
+        </div>
+        <span>4</span>
+       </li>
+       <li class='w-full flex space-x-2 justify-center items-center py-2'>
+       <div>
+       <img src='${bath}'/>
+       </div>
+       <span>4</span>
+      </li>
+      <li class='w-full flex space-x-2 justify-center items-center py-2'>
+      <div>
+      <img src='${hash}'/>
+      </div>
+      <span>4</span>
+     </li>
        </ul>
     </div>
     `
@@ -150,11 +169,11 @@ const btm = document.getElementById("bottom");
 
 const hideMiddle = "hidden";
 const hideMenu = "translate-x-[100%]";
-const rotateTop = "rotate-45";
+// const rotateTop = "rotate-45";
 // const rotateBtm = `-rotate-45 translate-y-[4rem]`;
 menubtn.addEventListener("click", () => {
   middle.classList.toggle(hideMiddle);
   togglemenu.classList.toggle(hideMenu);
-  topp.classList.toggle(rotateTop);
+  topp.classList.toggle("rotateTop");
   btm.classList.toggle("rotateBtm");
 });
