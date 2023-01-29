@@ -13,25 +13,25 @@
     <header class="w-full flex relative flex-col pt-2 bg-black/20 bg-blend-darken 
     bg-[url('/src/assets/navcover.png')] h-[42rem] object-cover bg-cover">
         <nav class="w-10/12 border-b border-gray-400 mx-auto flex justify-between items-center py-4">
-        <div>
-            <img src='./assets/logo 1.png'/>
+        <div class="w-[6rem] h-[2rem]">
+            <img class="w-full h-full" src='./assets/logo 1.png'/>
         </div>
         <ul class="hidden md:flex text-white space-x-8">
             <li class="relative group hover:border-white">
                 <a href="">Home</a>
-                <div class="bg-white duration-500 group-hover:w-full absolute top-[3.3rem] h-0.5 w-0"></div>
+                <div class="bg-white duration-500 group-hover:w-full absolute top-[2.75rem] h-0.5 w-0"></div>
             </li>
             <li class="relative group hover:border-white">
                 <a href="">Landlord</a>
-                <div class="bg-white duration-500 group-hover:w-full absolute top-[3.3rem] h-0.5 w-0"></div>
+                <div class="bg-white duration-500 group-hover:w-full absolute top-[2.75rem] h-0.5 w-0"></div>
             </li>
             <li class="relative group hover:border-white">
                 <a href="">Tenant</a>
-                <div class="bg-white duration-500 group-hover:w-full absolute top-[3.3rem] h-0.5 w-0"></div>
+                <div class="bg-white duration-500 group-hover:w-full absolute top-[2.75rem] h-0.5 w-0"></div>
             </li>
             <li class="relative group hover:border-white">
                 <a href="">Contact us</a>
-                <div class="bg-white duration-500 group-hover:w-full absolute top-[3.3rem] h-0.5 w-0"></div>
+                <div class="bg-white duration-500 group-hover:w-full absolute top-[2.75rem] h-0.5 w-0"></div>
             </li>
         </ul>
         <!-- hamburger -->
@@ -43,7 +43,7 @@
         </nav>
         <!-- Hero -->
         <section class="w-10/12 absolute left-0 right-0 top-1/3 mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div class="w-full md:w-1/2 text-white text-3xl md:text-[3rem] leading-[3.5rem] font-bold">
+        <div class="w-full md:w-1/2 text-white leading-[3rem] text-xl md:text-[3rem] font-bold">
             <h1>The Most Affordable Place To Stay In The
                 San Fransisco Bay Area
             </h1>
@@ -66,37 +66,37 @@
     </section>
     <section class="w-10/12 my-10 mx-auto flex flex-col">
         <div class="relative">
-            <h1 class="text-3xl font-bold">Minimum Living Cost Takes Care Of Everything</h1>
+            <h1 class="text-lg md:text-3xl font-bold">Minimum Living Cost Takes Care Of Everything</h1>
             <div class="w-1/4 h-[2px] absolute bg-orange-500"></div>
         </div>
-        <div class="w-full flex my-4 justify-between items-center">
-            <div class="w-2/5">
+        <div class="w-full flex flex-col md:flex-row my-4 justify-between items-center">
+            <div class=" w-full md:w-2/5">
                 <div>
                     <img src='./assets/unsplash.png'/>
                 </div>
             </div>
-            <div id='smallcard' class="w-3/5 grid grid-rows-3 grid-cols-3 gap-4">
+            <div id='smallcard' class="w-full md:w-3/5 grid grid-rows-3 grid-cols-3 gap-4">
             </div>
         </div>
     </section>
     <div class="w-full bg-[#E5E5E5]">
         <section  class="w-10/12 pt-[4rem] mx-auto flex flex-col">
-            <div class="flex justify-between my-12 items-center w-full">
+            <div class="flex flex-col md:flex-row gap-y-4 justify-between my-12 items-start w-full">
                 <div class="relative">
-                    <h1 class="text-3xl font-bold">List Of Properties</h1>
+                    <h1 class="text-lg md:text-3xl font-bold">List Of Properties</h1>
                     <div class="w-1/4 h-[2px] absolute bg-orange-500"></div>
                 </div> 
                 <a class="bg-orange-500 px-4 py-3 text-white" href="">View all properties</a>
             </div>
-            <div id='properties' class='w-full grid grid-rows-2 grid-cols-3 gap-x-4 gap-y-8' >
+            <div id='properties' class='w-full grid grid-rows-2 grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-8' >
     
             </div>
-            <ul class="border my-10 w-[23rem] divide-x divide-gray-500 mx-auto border-gray-500 flex justify-between items-center">
-                <li class="w-full py-4 text-center">First</li>
-                <li class="w-full py-4 text-center">1</li>
-                <li class="w-full py-4 text-center">2</li>
-                <li class="w-full py-4 text-center">1</li>
-                <li class="w-full py-4 text-center">Next</li>
+            <ul class="border my-10 divide-x divide-gray-500 mx-auto border-gray-500 flex justify-between items-center">
+                <li class="w-full p-4 text-center">First</li>
+                <li class="w-full cursor-pointer active:text-white active:bg-orange-500 text-orange-500 font-bold bg-white p-4 text-center">1</li>
+                <li class="w-full cursor-pointer active:text-white active:bg-orange-500 text-orange-500 font-bold bg-white p-4 text-center">2</li>
+                <li class="w-full cursor-pointer active:text-white active:bg-orange-500 text-orange-500 font-bold bg-white p-4 text-center">1</li>
+                <li class="w-full cursor-pointer active:text-white active:bg-orange-500 text-orange-500 font-bold bg-white p-4 text-center">Next</li>
             </ul>
         </section>
     </div>
@@ -106,42 +106,42 @@
         <div class="w-full flex space-x-10 flex-col-reverse md:flex-row items-center">
             <!-- Image gallery -->
             <div class="w-full flex gap-y-4 flex-col md:w-1/2"> 
-            <div class="flex space-x-4 items-end justify-between">
-                <div class="w-[47%] bg-black/30 rounded-xl pt-4 bg-blend-darken  h-[20rem] bg-cover bg-[url('/src/assets/show1.png')]">
-                    <h3 class="text-center text-white font-semibold text-2xl">Flexible Leases</h3>
+            <div class="flex space-x-4 mt-4 items-end justify-between">
+                <div class="w-[47%] bg-black/30 rounded-xl pt-4 bg-blend-darken h-[14rem] md:h-[20rem] bg-cover bg-[url('/src/assets/show1.png')]">
+                    <h3 class="text-center text-white font-semibold text-lg md:text-2xl">Flexible Leases</h3>
                 </div>
-                <div class="w-[53%] bg-black/30 rounded-xl pt-4 bg-blend-darken  h-[16rem] bg-cover bg-[url('/src/assets/show2.png')]">
-                    <h3 class="text-center text-white font-semibold text-2xl">7-Day Happiness<br>Guaranteed</h3>
+                <div class="w-[53%] bg-black/30 rounded-xl pt-4 bg-blend-darken h-[12rem] md:h-[16rem] bg-cover bg-[url('/src/assets/show2.png')]">
+                    <h3 class="text-center text-white font-semibold text-lg md:text-2xl">7-Day Happiness<br>Guaranteed</h3>
                 </div>
             </div>
             <div class="flex space-x-4 items-start justify-between">
-                <div class="w-[43%] bg-black/30 rounded-xl pt-4 bg-blend-darken h-[16rem] bg-cover bg-[url('/src/assets/show3.png')]">
-                    <h3 class="text-center text-white font-semibold text-2xl">Monthly House<br>Cleaning</h3>
+                <div class="w-[43%] bg-black/30 rounded-xl pt-4 bg-blend-darken h-[12rem] md:h-[16rem] bg-cover bg-[url('/src/assets/show3.png')]">
+                    <h3 class="text-center text-white font-semibold text-lg md:text-2xl">Monthly House<br>Cleaning</h3>
                 </div>
-                <div class="w-[57%] bg-black/30 rounded-xl pt-4 bg-blend-darken h-[20rem] bg-cover bg-[url('/src/assets/show4.png')]">
+                <div class="w-[57%] bg-black/30 rounded-xl pt-4 bg-blend-darken h-[14rem] md:h-[20rem] bg-cover bg-[url('/src/assets/show4.png')]">
                     <h3 class="text-center text-white font-semibold text-2xl">Choose Your<br>Own Roommate</h3>
                 </div>
             </div>
             
             </div>
             <div class="w-full flex gap-y-4 flex-col items-start md:w-1/2">
-            <h2 class="font-bold text-3xl">Flexibility and options<br> to suit your lifestyle</h2>
-            <p>You need it? We got it. We make finding your next<br> home easy, comfortable, and simple. From our<br> 
-                happiness guarantee to our selective roommate<br> finder option. 
-                We provide you the flexibility that you <br>most desire.</p>
-                <button class="bg-orange-500 text-white text-md px-8 py-3 rounded-xl">
+            <h2 class="font-bold text-lg md:text-3xl">Flexibility and options<br> to suit your lifestyle</h2>
+            <p>You need it? We got it. We make finding your next home easy, comfortable, and simple. From our 
+                happiness guarantee to our selective roommate finder option. 
+                We provide you the flexibility that you most desire.</p>
+                <button class="bg-orange-500 text-white text-md px-6 py-2 md:px-8 md:py-3 rounded-xl">
                     Search Rooms
                 </button>
             </div>
         </div>
     </section >
     <section class="w-10/12 my-10 mx-auto flex flex-col">
-    <h3 class="text-center text-2xl">Your property with us and be Confident that Your Room will be Filled Out!</h3>
+    <h3 class="text-center text-lg md:text-2xl">Your property with us and be Confident that Your Room will be Filled Out!</h3>
     <!-- Form -->
-    <div class="p-4 shadow-xl my-8">
+    <div class="p-4 md:shadow-xl my-8">
         <h2 class="text-center text-2xl font-bold text-orange-500">Add A New Property</h2>
         <form class="w-11/12 mx-auto mt-8 border-black">
-            <div class="grid gap-5 grid-cols-3">
+            <div class="grid gap-5 grid-cols-1 md:grid-cols-3">
                 <div class="flex flex-col gap-y-2">
                     <label class="font-bold">Name</label>
                     <input required class="bg-gray-100 outline-none border border-gray-500 text-black p-2 rounded-md" placeholder="Enter Name" type="text"/>
@@ -192,19 +192,19 @@
             </div>
             
             <div class="w-full py-[2rem] flex justify-center">
-                <button class="w-1/2 bg-orange-500 py-2 text-white text-xl  rounded-lg">Add New Property</button>
+                <button class="md:w-1/2 w-full bg-orange-500 py-2 text-white text-lg md:text-xl rounded-lg">Add New Property</button>
             </div>
         </form>
     </div>
     </section>
     <section class="w-full flex flex-col md:flex-row bg-orange-100 justify-between">
         <div class="w-full md:w-1/2 p-[4rem] flex flex-col">
-          <p class="text-lg font-semibold">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-            Etiam interdum nisl et nunc facilisis, a commodo eros mollis. Nunc vel<br> 
-            pellentesque est. Curabitur at odio sit amet libero vulputate <br>
-            efficitur ac nec justo. Nulla vitae mauris quam. Nulla quam <br>
-            massa, faucibus id pretium ac, mattis eu velit. Donec sed risus<br> 
+          <p class="text-sm md:text-lg font-semibold">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Etiam interdum nisl et nunc facilisis, a commodo eros mollis. Nunc vel 
+            pellentesque est. Curabitur at odio sit amet libero vulputate 
+            efficitur ac nec justo. Nulla vitae mauris quam. Nulla quam 
+            massa, faucibus id pretium ac, mattis eu velit. Donec sed risus 
             a lacus fringilla finibus.
           </p>  
           <div class="flex items-center my-[2rem] space-x-4">
@@ -218,7 +218,7 @@
           </div>
         </div>
         <div class="w-full md:w-1/2 h-full">
-            <video controls height="">
+            <video controls height="20rem">
                 <source src="./assets/testvideo.mp4" type="video/mp4">
             </video>
             <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4sh1gS5Gr-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->

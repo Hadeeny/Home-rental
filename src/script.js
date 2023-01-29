@@ -55,7 +55,7 @@ smallcard.innerHTML = benefits
                     <div class="w-[5rem] h-[5rem] flex items-center justify-center shadow-lg">
                     <img src='${item.icon}'/>
                     </div>
-                    <h3 class="text-lg max-w-sm font-bold">${item.text}</h3>
+                    <h3 class="text-[12px] md:text-lg max-w-sm font-bold">${item.text}</h3>
                 </div>
     `
   )
@@ -76,8 +76,8 @@ smallcard.innerHTML = benefits
 const path = "./assets/property1.png";
 
 const house = "./assets/house.svg";
-const bath = "./assets/bath.svg";
-const hash = "./assets/hash.svg";
+// const bath = "./assets/bath.svg";
+// const hash = "./assets/hash.svg";
 props.innerHTML = properties
   .map(
     (item, id) =>
@@ -104,15 +104,15 @@ props.innerHTML = properties
        </li>
        <li class='w-full flex space-x-2 justify-center items-center py-2'>
        <div>
-       <img src='${bath}'/>
+       <img src='${house}'/>
        </div>
        <span>4</span>
       </li>
       <li class='w-full flex space-x-2 justify-center items-center py-2'>
       <div>
-      <img src='${hash}'/>
+      <img src='${house}'/>
       </div>
-      <span>4</span>
+      <span>4</span> 
      </li>
        </ul>
     </div>
