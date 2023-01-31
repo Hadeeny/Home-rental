@@ -12,7 +12,7 @@
     <!-- Desktop Header -->
     <header class="w-full flex relative flex-col pt-2 bg-black/20 bg-blend-darken 
     bg-[url('/src/assets/navcover.png')] h-[42rem] object-cover bg-cover">
-        <nav class="w-10/12 border-b border-gray-400 mx-auto flex justify-between items-center py-4">
+        <nav class="w-10/12 relative border-b border-gray-400 mx-auto flex justify-between items-center py-4">
         <div class="w-[6rem] h-[2rem]">
             <img class="w-full h-full" src='./assets/logo 1.png'/>
         </div>
@@ -35,21 +35,21 @@
             </li>
         </ul>
         <!-- hamburger -->
-        <div id="hamburger" class="h-[2rem] z-[30] cursor-pointer md:hidden">
+        <div id="hamburger" class="h-[2rem] fixed right-8 z-[30] cursor-pointer md:hidden">
             <div id="topp" class='h-[2px] w-8 duration-500 bg-white'></div>    
             <div id="middle" class='h-[2px] translate-y-2 w-8 bg-white'></div>    
             <div id="bottom" class='h-[2px] translate-y-4 w-8 duration-500 bg-white'></div>    
         </div>
         </nav>
         <!-- Hero -->
-        <section class="w-10/12 absolute left-0 right-0 top-1/3 mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div class="w-full md:w-1/2 text-white leading-[3rem] text-xl md:text-[3rem] font-bold">
+        <section class="w-10/12 mt-[3.2rem] mx-auto flex flex-col gap-y-4 md:flex-row justify-between items-center">
+        <div class="w-full md:w-1/2 text-white leading-[3rem] text-2xl md:text-[3rem] font-bold">
             <h1>The Most Affordable Place To Stay In The
                 San Fransisco Bay Area
             </h1>
         </div>
         <div class="w-full flex justify-center items-center md:w-1/2">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555060494!2d-122.507640411202!3d37.75781499688801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1674644408577!5m2!1sen!2sng" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="w-full h-[18rem]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555060494!2d-122.507640411202!3d37.75781499688801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1674644408577!5m2!1sen!2sng" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         </section>
         
@@ -57,7 +57,8 @@
     <!-- mobile menu -->
     <section id="togglemenu" class="w-full duration-500 translate-x-[100%] bg-white/70 backdrop-blur-md z-[20] fixed top-0 left-0 right-0 h-screen md:hidden">
 
-        <ul class="absolute w-1/2 space-y-8 text-center flex flex-col justify-center inset-y-0 my-auto inset-x-0 mx-auto">
+        <ul class="absolute w-1/2 space-y-8 text-center flex flex-col justify-center 
+        top-48 my-auto inset-x-0 mx-auto">
             <li><a class="text-3xl" href="">Home</a></li>
             <li><a class="text-3xl" href="">Landlord</a></li>
             <li><a class="text-3xl" href="">Tenant</a></li>
@@ -103,7 +104,7 @@
 
     <!-- Search room -->
     <section class="w-10/12 my-10 mx-auto flex flex-col">
-        <div class="w-full flex space-x-10 flex-col-reverse md:flex-row items-center">
+        <div class="w-full flex gap-x-8 flex-col-reverse md:flex-row items-center">
             <!-- Image gallery -->
             <div class="w-full flex gap-y-4 flex-col md:w-1/2"> 
             <div class="flex space-x-4 mt-4 items-end justify-between">
@@ -125,8 +126,8 @@
             
             </div>
             <div class="w-full flex gap-y-4 flex-col items-start md:w-1/2">
-            <h2 class="font-bold text-lg md:text-3xl">Flexibility and options<br> to suit your lifestyle</h2>
-            <p>You need it? We got it. We make finding your next home easy, comfortable, and simple. From our 
+                <h2 class="font-bold text-lg md:text-3xl">Flexibility and options<br> to suit your lifestyle</h2>
+                <p>You need it? We got it. We make finding your next home easy, comfortable, and simple. From our 
                 happiness guarantee to our selective roommate finder option. 
                 We provide you the flexibility that you most desire.</p>
                 <button class="bg-orange-500 text-white text-md px-6 py-2 md:px-8 md:py-3 rounded-xl">
@@ -197,8 +198,8 @@
         </form>
     </div>
     </section>
-    <section class="w-full flex flex-col md:flex-row bg-orange-100 justify-between">
-        <div class="w-full md:w-1/2 p-[4rem] flex flex-col">
+    <section class="w-full flex items-center flex-col md:flex-row bg-orange-100 justify-between">
+        <div class="w-full md:w-1/2 p-[2rem] flex flex-col">
           <p class="text-sm md:text-lg font-semibold">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Etiam interdum nisl et nunc facilisis, a commodo eros mollis. Nunc vel 
@@ -207,7 +208,7 @@
             massa, faucibus id pretium ac, mattis eu velit. Donec sed risus 
             a lacus fringilla finibus.
           </p>  
-          <div class="flex items-center my-[2rem] space-x-4">
+          <div class="flex items-center mt-8 space-x-4">
               <div>
                   <img src="./assets/user.png"/>
               </div>
@@ -217,17 +218,17 @@
               </div>
           </div>
         </div>
-        <div class="w-full md:w-1/2 h-full">
-            <video controls height="20rem">
+        <div class="w-full bg-red-400 md:w-1/2 h-full">
+            <video class="w-full" controls>
                 <source src="./assets/testvideo.mp4" type="video/mp4">
             </video>
             <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4sh1gS5Gr-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
         </div>
     </section>
     <Footer class="w-10/12 my-10 mx-auto flex flex-col">
-        <div class="flex justify-between flex-col md:flex-row items-center">
+        <div class="flex justify-between gap-y-8 flex-col md:flex-row items-center">
             <div class="w-full md:w-1/2">
-                <h2 class="text-[3rem] font-bold">Logo</h2>
+                <h2 class="text-3xl md:text-[3rem] font-bold">Logo</h2>
             </div>
             <div class="w-full space-y-8 md:w-1/2" >
                 <div class="flex space-x-4">
